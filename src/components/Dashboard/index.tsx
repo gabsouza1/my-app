@@ -1,9 +1,11 @@
-import {Container, Product, Select, Grade } from './styles'
+import {Primary, Container, Product, Select, Grade } from './styles'
 
 
 export function Dashboard() {
     return(
         <Container>
+            
+            <Primary>
             <h1>1 . Perfil</h1>
             <p>Qual o seu <strong> cargo </strong> na empresa?</p>
             <Select>
@@ -16,7 +18,8 @@ export function Dashboard() {
                 <option value="Administração"> Administração </option>
                 <option value="Gerente">  Gerente </option>
             </Select>
-
+            </Primary>
+            <Primary>
             <p> Qual <strong> area ou departamento </strong> você atua? </p>
             <Select>
                 <option value="" disabled selected >Selecionar opção</option>
@@ -26,6 +29,8 @@ export function Dashboard() {
                 <option value="Direção" > Direção </option>
                 <option value="Vendas" > Vendas </option>
             </Select>
+            </Primary>
+            <Primary>
             <h1>2 . Produto</h1>
             <p>Por favor, informe qual dos produtos abaixo que você possui dentro da linha TOTVS</p>
             <Product> 
@@ -34,12 +39,14 @@ export function Dashboard() {
                 <button>RH Datasul</button>
                 <button>Nenhuma das opções</button>
             </Product>
-
-
+            </Primary>
+            
+            <Primary>
             <h1>3 . AVALIAÇÃO DAS CARACTERISTICAS DAS SOLUÇÕES DE RH</h1>
             <p>Em uma escala de 1 a 7, <strong> onde 1 é não reconheço e 7 reconheço totalmente</strong>, avalie o quanto 
             você reconhece a presença das caracteristicas mencionadas abaixo  nas soluções de RH da TOTVS</p>
             <p> Inovação: </p>
+            
             <Grade> 
                 <button> 1 </button>
                 <button> 2 </button>
@@ -69,6 +76,7 @@ export function Dashboard() {
                 <button> 6 </button>
                 <button> 7 </button>
             </Grade>
+            </Primary>
         </Container>
     )
 }

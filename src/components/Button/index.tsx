@@ -5,7 +5,9 @@ import { Container }from '../Button/styles'
 export function Button () {
     return(
         <Container>
-            <p>Próximo</p>
+            <button>
+                Próximo
+            </button>
         </Container>
     )
 }
