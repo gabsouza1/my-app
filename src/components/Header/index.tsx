@@ -1,5 +1,4 @@
-import img  from '../../assets/logo.svg'
-
+import img from '../../assets/logo.png'
 import { Container, Content } from './styles'
 
 
@@ -7,10 +6,7 @@ export function Header() {
     return(
         <Container>
             <Content>
-                <img src={img} alt='Rock in Rio'/>
-                <button type="button">
-                    Inserir atração
-                </button>
+                <img src={img} alt="TOTVS"/>
             </Content>
         </Container>
     )
